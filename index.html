@@ -12,8 +12,18 @@
     <title>Bootstrap-Project-Third</title>
     <style>
       .body {
-        background-color: #a4aab2;
-        margin-bottom: 560px;
+        background: linear-gradient(90deg, #4c4446 0%, #3a1c71 100%);
+      }
+      .body_a {
+        background: linear-gradient(90deg, #402a63 0%, #4c4446 100%);
+      }
+      .body_aa {
+        background: linear-gradient(
+          90deg,
+          #4c4446 0%,
+          #3a1c71 100%,
+          #4c4446 0%
+        );
       }
       header {
         background-color: white;
@@ -83,8 +93,17 @@
         margin-bottom: 180px;
       }
       .butt {
-        margin-bottom: 430px;
+        margin-bottom: 520px;
         margin-left: 20px;
+      }
+      .banner {
+        margin-right: 100px;
+      }
+      .acc {
+        padding-top: 180px;
+      }
+      .jumb {
+        padding-bottom: 480px;
       }
       footer {
         background-color: #211617;
@@ -94,13 +113,13 @@
   </head>
   <body>
     <div class="container-fluid a_con p-0">
-      <header class="p-0">
+      <header class="p-0 bg-dark ">
         <div class="h_part">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand ms-5" href="#">Start Bootstrap</a>
+              <a class="navbar-brand ms-5 text-white mt-2" href="#">Start Bootstrap</a>
               <button
-                class="navbar-toggler"
+                class="navbar-toggler bg-dark mt-4"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
@@ -110,22 +129,22 @@
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse mt-3" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a
-                      class="nav-link active text-black"
+                      class="nav-link active text-white"
                       aria-current="page"
                       href="#"
                       >Home</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-black" href="#">about</a>
+                    <a class="nav-link text-white" href="#">about</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a
-                      class="nav-link dropdown-toggle text-black"
+                      class="nav-link dropdown-toggle text-white"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -135,26 +154,26 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li>
-                        <a class="dropdown-item text-black" href="#"
+                        <a class="dropdown-item text-white" href="#"
                           >Contact
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item text-black" href="#">Github</a>
+                        <a class="dropdown-item text-white" href="#">Github</a>
                       </li>
                       <li><hr class="dropdown-divider" /></li>
                       <li>
-                        <a class="dropdown-item text-black" href="#">Review</a>
+                        <a class="dropdown-item text-white" href="#">Review</a>
                       </li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-black" aria-disabled="true"
+                    <a class="nav-link text-white" aria-disabled="true"
                       >Social</a
                     >
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <form class="d-flex mt-1 me-" role="search">
                   <input
                     class="form-control me-2"
                     type="search"
@@ -162,7 +181,7 @@
                     aria-label="Search"
                   />
                   <button
-                    class="btn btn-outline-success text-black"
+                    class="btn btn-outline-success text-white "
                     type="submit"
                   >
                     Search
@@ -173,9 +192,9 @@
           </nav>
         </div>
       </header>
-      <div class="a_main row mt-">
-        <div class="col-8 a_cont text-center">
-          <h1>
+      <div class="a_main body row mt-">
+        <div class="col-8 a_cont text-center text-white">
+          <h1 class="mb-4">
             Bootstrap themes, templates, and UI tools to help you start your
             next project!
           </h1>
@@ -187,11 +206,11 @@
           </p>
           <button class="btn btn-danger">Browse Templates</button>
         </div>
-        <div class="col-4 a_main">
+        <div class="col-4 pe-2 body_a a_main">
           <img src="./booking-management-detail-1-300x300.png" />
         </div>
       </div>
-      <div class="container-fluid coll row">
+      <div class="container-fluid body p-0 m-0 coll row">
         <div class="col-4 mt-4">
           <button type="button" class="btn btn-dark dark">Categories</button>
         </div>
@@ -207,42 +226,17 @@
           </div>
         </div>
       </div>
-      <hr class="line" />
+
       <div class="container row">
-        <div class="col-4 padd">
-          <div class="card" style="width: 18rem">
-            <img src="./Github.jpg" class="card-img-top pad" alt="..." />
-            <div class="card-body">
-              <p class="card-text text-center">
-                GitHub Inc (GitHub), a subsidiary of Microsoft Corp, is a
-                software development platform.
-              </p>
-            </div>
-          </div>
-          <button class="btn btn-warning git text-center text-white paddd">
-            Github
-          </button>
-        </div>
-        <div class="col-4 padd">
-          <div class="card bg-white" style="width: 18rem">
-            <img src="./Linkedin.png" class="card-img-top pad" alt="..." />
-            <div class="card-body">
-              <p class="card-text text-center">
-                LinkedIn is the world's largest professional network on the
-                internet.
-              </p>
-            </div>
-          </div>
-          <button class="btn btn-warning text-center text-black m-0 lin paddd">
-            Linkedin
-          </button>
-        </div>
+        <div class="col-4 padd"></div>
       </div>
 
-      <div class="container-fluid body">
-        <div class="col-8 p">
+      <div class="container-fluid mb-5 body p-0">
+        <div class="col-8 mb-5 p">
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label mt-5"
+            <label
+              for="exampleFormControlInput1"
+              class="form-label mt-5 text-white"
               >Email address</label
             >
             <input
@@ -253,7 +247,9 @@
             />
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"
+            <label
+              for="exampleFormControlTextarea1"
+              class="form-label text-white"
               >Example textarea</label
             >
             <textarea
@@ -263,16 +259,19 @@
             ></textarea>
           </div>
         </div>
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Open this select menu</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+        <select
+          class="form-select text-black m-4"
+          aria-label="Default select example"
+        >
+          <option selected>Do You like the page ?</option>
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+          <option value="3">Of course</option>
         </select>
 
-        <div class="accordion" id="accordionExample">
+        <div class="accordion mt-5 p-4 acc" id="accordionExample">
           <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h2 class="accordion-header mb-2">
               <button
                 class="accordion-button"
                 type="button"
@@ -281,29 +280,25 @@
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                Accordion Item #1
+                What is Bootstrap ?
               </button>
             </h2>
+
             <div
               id="collapseOne"
               class="accordion-collapse collapse show"
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth noting that
-                just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
+                <strong>
+                 Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap provides a collection of syntax for template designs.
+               , though the transition does limit
                 overflow.
               </div>
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h2 class="accordion-header mb-2">
               <button
                 class="accordion-button collapsed"
                 type="button"
@@ -312,7 +307,7 @@
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                Accordion Item #2
+                What are the best thing about Bootstrap ?
               </button>
             </h2>
             <div
@@ -321,14 +316,8 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
+                <strong>Bootstrap is a great way to learn responsive design, even if you only use it as a stepping stone before moving on to develop your own style 
+               , though the transition does limit
                 overflow.
               </div>
             </div>
@@ -343,7 +332,7 @@
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                Accordion Item #3
+               Is their any future scope for that ?
               </button>
             </h2>
             <div
@@ -352,31 +341,91 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                <strong>Yes having Bootstrap included with your Frontend Skills will definately increase the chance of 
+                  being selected !
               </div>
             </div>
           </div>
         </div>
-        <div class="container me-5">
+
+        <div class="container bann">
           <img
             src="./Black Modern Personal LinkedIn Banner.png"
             class="img-fluid log"
             alt="..."
           />
-          <div class="text-center but">
+          <div class="text-center">
             <button class="btn btn-dark b1 butt">Contact Now</button>
             <button class="btn btn-dark b2 butt">Profiles/Project</button>
           </div>
+          <div class="jumbotron jumb text-center">
+            <h1 class="display-4 text-center text-white">Hello, world!</h1>
+            <p class="lead text-center text-white">
+              This is a simple hero unit, a simple jumbotron-style component for
+              calling extra attention to featured content or information.
+            </p>
+            <hr class="my-2 text-center bg-dark" />
+            <p class="text-center text-white mt-5">
+              It uses utility classes for typography and spacing to space
+              content out within the larger container.
+            </p>
+            <a
+              class="btn btn-primary text-center  bg-dark text-white"
+              href="#"
+              role="button"
+              >Linkedin</a
+            >
+            <button
+              type="button"
+              class="btn btn-secondary bg-dark"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Tooltip on top"
+            >
+              Github
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary bg-dark"
+              data-toggle="tooltip"
+              data-placement="right"
+              title="Tooltip on right"
+            >
+              Website
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary bg-dark
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Tooltip on bottom"
+            >
+              Whatsapp
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary bg-dark"
+              data-toggle="tooltip"
+              data-placement="left"
+              title="Tooltip on left"
+            >
+              Twitter
+            </button>
+          </div>
         </div>
       </div>
+    </div>
+
+    <div class="card text-center">
+      <div class="card-header body text-white">Featured</div>
+      <div class="card-body body">
+        <h5 class="card-title text-white">Wanted to Connect ?</h5>
+        <p class="card-text text-white">
+          Lets Collaborate for an open Source Project ?
+        </p>
+        <a href="#" class="btn btn-primary body">Github</a>
+      </div>
+      <div class="card-footer text-white body">Aditya Mishra</div>
     </div>
 
     <script
