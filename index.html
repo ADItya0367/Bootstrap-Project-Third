@@ -11,6 +11,10 @@
     />
     <title>Bootstrap-Project-Third</title>
     <style>
+      .body {
+        background-color: #a4aab2;
+        margin-bottom: 560px;
+      }
       header {
         background-color: white;
         height: 80px;
@@ -34,7 +38,54 @@
       .start {
         padding: 0%;
       }
-
+      .padd {
+        padding: 20px;
+        margin-left: 180px;
+      }
+      .paddd {
+        margin-left: 100px;
+        margin-top: 20px;
+      }
+      .pad {
+        padding-right: 60px;
+      }
+      .lin {
+        background-color: #007ebb;
+      }
+      .git {
+        background-color: #0d1017;
+      }
+      .dark {
+        margin-left: 440px;
+      }
+      .light {
+        margin-right: 420px;
+      }
+      .line {
+        background-color: black;
+      }
+      .coll {
+        background-color: #a4aab2;
+      }
+      .p {
+        margin-left: 180px;
+      }
+      .b1 {
+        margin-right: -10px;
+      }
+      .b2 {
+        margin-left: 20px;
+      }
+      .but {
+        background-color: #a4aab2;
+      }
+      .log {
+        margin-bottom: 180px;
+      }
+      .butt {
+        margin-bottom: 430px;
+        margin-left: 20px;
+      }
       footer {
         background-color: #211617;
         height: 200px;
@@ -62,16 +113,19 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                    <a
+                      class="nav-link active text-black"
+                      aria-current="page"
+                      href="#"
                       >Home</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">about</a>
+                    <a class="nav-link text-black" href="#">about</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a
-                      class="nav-link dropdown-toggle"
+                      class="nav-link dropdown-toggle text-black"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -80,18 +134,24 @@
                       Languages
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Contact </a></li>
                       <li>
-                        <a class="dropdown-item" href="#">Github</a>
+                        <a class="dropdown-item text-black" href="#"
+                          >Contact
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-black" href="#">Github</a>
                       </li>
                       <li><hr class="dropdown-divider" /></li>
                       <li>
-                        <a class="dropdown-item" href="#">Review</a>
+                        <a class="dropdown-item text-black" href="#">Review</a>
                       </li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true">Social</a>
+                    <a class="nav-link text-black" aria-disabled="true"
+                      >Social</a
+                    >
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -101,7 +161,10 @@
                     placeholder="Search"
                     aria-label="Search"
                   />
-                  <button class="btn btn-outline-success" type="submit">
+                  <button
+                    class="btn btn-outline-success text-black"
+                    type="submit"
+                  >
                     Search
                   </button>
                 </form>
@@ -128,69 +191,192 @@
           <img src="./booking-management-detail-1-300x300.png" />
         </div>
       </div>
-      <div class="container-fluid">
-        <a
-          class="btn btn-primary"
-          data-bs-toggle="offcanvas"
-          href="#offcanvasExample"
-          role="button"
-          aria-controls="offcanvasExample"
-        >
-          Link with href
-        </a>
-        <button
-          class="btn btn-primary"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasExample"
-          aria-controls="offcanvasExample"
-        >
-          Button with data-bs-target
-        </button>
-
-        <div
-          class="offcanvas offcanvas-start"
-          tabindex="-1"
-          id="offcanvasExample"
-          aria-labelledby="offcanvasExampleLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-              Offcanvas
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <div>
-              Some text as placeholder. In real life you can have the elements
-              you have chosen. Like, text, images, lists, etc.
-            </div>
-            <div class="dropdown mt-3">
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-              >
-                Dropdown button
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </div>
+      <div class="container-fluid coll row">
+        <div class="col-4 mt-4">
+          <button type="button" class="btn btn-dark dark">Categories</button>
+        </div>
+        <div class="col-8 mt-4 mb-4">
+          <div
+            class="btn-group float-end light"
+            role="group"
+            aria-label="Basic mixed styles example"
+          >
+            <button type="button" class="btn btn-danger">HTML</button>
+            <button type="button" class="btn btn-dark">CSS</button>
+            <button type="button" class="btn btn-danger">Javascript</button>
           </div>
         </div>
       </div>
+      <hr class="line" />
+      <div class="container row">
+        <div class="col-4 padd">
+          <div class="card" style="width: 18rem">
+            <img src="./Github.jpg" class="card-img-top pad" alt="..." />
+            <div class="card-body">
+              <p class="card-text text-center">
+                GitHub Inc (GitHub), a subsidiary of Microsoft Corp, is a
+                software development platform.
+              </p>
+            </div>
+          </div>
+          <button class="btn btn-warning git text-center text-white paddd">
+            Github
+          </button>
+        </div>
+        <div class="col-4 padd">
+          <div class="card bg-white" style="width: 18rem">
+            <img src="./Linkedin.png" class="card-img-top pad" alt="..." />
+            <div class="card-body">
+              <p class="card-text text-center">
+                LinkedIn is the world's largest professional network on the
+                internet.
+              </p>
+            </div>
+          </div>
+          <button class="btn btn-warning text-center text-black m-0 lin paddd">
+            Linkedin
+          </button>
+        </div>
+      </div>
 
-      <footer></footer>
+      <div class="container-fluid body">
+        <div class="col-8 p">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label mt-5"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Example textarea</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Accordion Item #1
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Accordion Item #2
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Accordion Item #3
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container me-5">
+          <img
+            src="./Black Modern Personal LinkedIn Banner.png"
+            class="img-fluid log"
+            alt="..."
+          />
+          <div class="text-center but">
+            <button class="btn btn-dark b1 butt">Contact Now</button>
+            <button class="btn btn-dark b2 butt">Profiles/Project</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script
