@@ -1,3 +1,6 @@
+![Screenshot (10)](https://github.com/ADItya0367/Bootstrap-Project-Third/assets/113133103/479d8d58-3b9a-40e1-adc7-217fcd3b7cad)
+
+
 NETLIFY :-(https://teal-llama-306068.netlify.app/)
 
 Build a Sample Page Using Bootstrap Welcome to the Bootstrap Simple Project! For this project, you'll be creating a web page fully on Bootstrap to show off your work. We will test your HTML knowledge and then it will be up to you to use CSS to style your own page and make it unique.
